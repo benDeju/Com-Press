@@ -1,6 +1,6 @@
 # Com-Press
 
-**Com-Press is a Windows desktop utility for compressing and converting files through a category-based radial action wheel.** It brings common file tasks together in one place, so you can choose a task by category instead of configuring a separate menu for every format.
+**Com-Press 1.4.6 is a Windows desktop utility for compressing and converting files through a category-based radial action wheel.** It brings common file tasks together in one place, so you can choose a task by category instead of configuring a separate menu for every format.
 
 ## What Com-Press does
 
@@ -20,6 +20,7 @@ ZIP, TAR, TAR.GZ, and GZIP use Python's bundled standard library. Creating 7Z ar
 ### Documents
 
 - Combine one or more pictures into a multi-page PDF.
+- Merge multiple PDFs into a file named `Merged File` by default. Preview every page, add more PDFs, drag pages into the desired order, and choose a different output name before starting.
 - Convert Word documents to PDF.
 - Convert PDF files to editable Word documents.
 - Export PDF pages as PNG or JPG images.
@@ -45,6 +46,8 @@ The wheel opens at the pointer. Select a category to see its actions; use the ce
 
 The wheel can be opened from the app's wheel preview, with its keyboard shortcut, or—when enabled—from a selected file in File Explorer or on the desktop by holding the left mouse button. The hold gesture is optional and can be turned on in **Preferences**. After the wheel appears, choose the category and action for the selected item.
 
+When Com-Press opens, an animated desktop helper greets the user. During a compression or conversion task, it switches to its working animation and displays progress, the current task, and an estimated time remaining when progress data is available.
+
 ## Preferences and app behavior
 
 Preferences let you adjust:
@@ -53,8 +56,11 @@ Preferences let you adjust:
 - Default archive compression level and save folder.
 - Wheel keyboard shortcut and size.
 - Optional File Explorer and desktop hold gesture.
+- Enabling or disabling the radial wheel.
 - Starting with Windows and starting minimized in the system tray.
 - Minimizing the app to the system tray.
+
+On a new profile, the action wheel, mouse hold gesture, Windows startup, and minimize-to-tray behavior are enabled by default. Existing saved preferences are retained.
 
 Com-Press keeps task output beside the source files by default unless a different archive destination is configured. It avoids overwriting existing outputs by choosing a unique filename. Media conversions run without opening a command window, and longer jobs display progress in the app.
 
